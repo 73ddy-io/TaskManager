@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
       // Store the result so we can check if the account exists in the database.
       $stmt->store_result();
       if ($stmt->num_rows == 0 && empty($logname_err)) {
-          $password_err = "Password is incorrect";
+          $password_err = "Password is incorrect.";
       }
      
     }

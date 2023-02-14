@@ -26,9 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     }
   }
 
-  if (empty($password)){
+  if (empty($password) && empty($logname_err)){
     $password_err = "Password is empty.";
-  } elseif (strlen($password) < 5){
+  } elseif (strlen($password) < 5 && empty($logname_err)){
     $password_err = "Too short password.";
   } else {
     if ($stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?")){

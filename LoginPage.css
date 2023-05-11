@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700,800,900&display=swap');
+
+body {
+    background-color: #303030;
+    font-family: Poppins, sans-serif;
+  }
+
+  .form-container {
+    background-color: #202020;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 6px 12px, rgba(0, 0, 0, 0.65) 0px 9px 20px;
+    color: white;
+    text-align: left;
+  }
+
+  .regloglink {
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #151515;
+    outline: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #303030;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: #00ad5a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-out;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #2b874a;
+  }
+
+  .register-prompt {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  a {
+    color: #00ad5a;
+    text-decoration: none;
+    background-color: transparent;
+    transition: text-shadow 0.3s ease-out;
+  }
+
+  a:hover{
+    text-shadow: #00ad5a 0px 0px 20px, #00ad5a 0px 0px 15px, #00ad5a 0px 0px 10px;
+  }
+
+  h2{
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .alert {
+    text-align: center;
+    color: #f8173e;
+    height: 38px;
+  }

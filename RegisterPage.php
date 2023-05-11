@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 include_once "GlobalVariables.php";
 
@@ -65,83 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      body {
-        background-color: #303030;
-      }
-
-      .form-container {
-        background-color: #202020;
-        border-radius: 10px;
-        padding: 20px;
-        width: 30%;
-        margin: 0 auto;
-        box-shadow: rgba(0, 0, 0, 0.75) 0px 6px 12px, rgba(0, 0, 0, 0.65) 0px 9px 20px;
-        color: white;
-        text-align: left;
-      }
-
-      .regloglink {
-        text-align: center;
-      }
-      input[type="text"],
-      input[type="password"] {
-        width: 100%;
-        padding: 12px;
-        border-radius: 5px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: 2px solid #151515;
-        outline: none;
-        font-size: 16px;
-        color: #FFFFFF;
-        background-color: #303030;
-      }
-
-      input[type="submit"] {
-        width: 100%;
-        background-color: #8a2be2;
-        color: white;
-        padding: 14px 20px;
-        margin: 20px 0px 8px 0px;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s ease-out;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #7019c2;
-      }
-
-      .register-prompt {
-        margin-top: 20px;
-        font-size: 16px;
-      }
-
-      a {
-        color: #8a2be2;
-        text-decoration: none;
-        background-color: transparent;
-        transition: text-shadow 0.3s ease-out;
-      }
-
-      a:hover{
-        text-shadow: #8b00ff 0px 0px 20px, #8b00ff 0px 0px 15px, #8b00ff 0px 0px 10px;
-      }
-
-      h2{
-        margin-top: 0px;
-        text-align: center;
-      }
-
-      .alert {
-        text-align: center;
-        color: #f8173e;
-        height: 38px;
-      }
-    </style>
+    <link rel="stylesheet" href="RegisterPage.css"/>
   </head>
   <body>
     <div class="form-container">

@@ -605,3 +605,21 @@ a.border-menu-sections-item-link.change-color {
     /* box-shadow: inset 0 0 5px rgba(255, 255, 255, .7); */
 }
 
+.main-access-denied{
+    width: 100%;
+    height: 100%;
+    background-color: #303030;
+}
+
+.access-denied{
+    white-space: nowrap;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+

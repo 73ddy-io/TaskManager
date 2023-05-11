@@ -144,7 +144,7 @@
         <script src = "smooth-scrollbar.js"></script>
     </body>
     </html>
-<?php else: ?>
+<?php elseif ($_SESSION['auth'] == true): ?>
 	<p>пожалуйста, авторизуйтесь</p>
 <?php endif; ?>
 

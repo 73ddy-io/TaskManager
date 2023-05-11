@@ -55,7 +55,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
   if (empty($logname_err) && empty($password_err)) {
       $_SESSION['auth'] = true;
       header("Location: MainPage.php");
-  }        
+  }else{
+      $_SESSION['auth'] = false;
+  }
   
 //$query->close();
 //$insertQuery->close();

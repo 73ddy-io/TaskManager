@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
   }else{
       $_SESSION['auth'] = false;
   }
-  
+  session_write_close();
 //$query->close();
 //$insertQuery->close();
 // Close connection

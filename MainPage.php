@@ -3,7 +3,7 @@
 
     include_once "GlobalVariables.php";
     
-    if ($_SESSION['auth'] == true): ?>
+    if (array_key_exists('auth', $_SESSION) && $_SESSION['auth'] == true): ?>
 	<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -144,7 +144,7 @@
         <script src = "smooth-scrollbar.js"></script>
     </body>
     </html>
-<?php elseif ($_SESSION['auth'] == false): ?>
+<?php else: ?>
 	<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -157,9 +157,14 @@
     </head>
     <body>
         <div class="main-access-denied">
-            <p class="access-denied">
-                Access denied!
-            </p>
+            <div class="alert-access-denied">
+                <p class="text-access-denied">
+                    Access denied!
+                </p>
+                <span class="link-access-denied">
+                    You may <a href="RegisterPage.php" class="reg-link">register</a> or <a href="LoginPage.php" class="log-link">login</a>
+                </span>
+            </div>
         </div>
         <!-- <div class="overlay"></div> -->
         <script src = "script.js"></script>

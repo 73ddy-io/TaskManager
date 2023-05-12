@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $insertQuery->bind_param("ssss", $regname, $password, $permission, date("Y-m-d H:m:s"));
     $result = $insertQuery->execute();
     if ($result) {
-      header("Location: WelcomePage.php");
+      header("Location: MainPage.php");
     }
   }        
   
